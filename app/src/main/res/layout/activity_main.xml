@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.formobile.seelater.MainActivity">
 
     <TextView
@@ -15,5 +16,13 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:id="@+id/textView" />
+
+    <Button
+        android:text="@string/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
