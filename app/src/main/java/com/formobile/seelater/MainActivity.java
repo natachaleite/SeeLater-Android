@@ -1,12 +1,14 @@
 package com.formobile.seelater;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class MainActivity extends AppCompatActivity {
     private static final String CATEGORIA = "Script";
     Button b1;
 
@@ -17,9 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Log.i(CATEGORIA, getClassName()+".onCreate();");
-
-        b1 = (Button) findViewById(R.id.buttonVoltar);
-        b1.setOnClickListener(this);
     }
 
     public void onStart() {
@@ -58,8 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return(aux.substring(aux.lastIndexOf(".") +1));
     }
 
-    @Override
-    public void onClick(View v) {
-        finish();
+    public void startInicialActivity(View v) {
+        Intent intent = new Intent(this, InicialActivity.class);
+        startActivity(intent);
     }
 }

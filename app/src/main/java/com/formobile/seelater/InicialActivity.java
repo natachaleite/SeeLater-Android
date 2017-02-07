@@ -19,10 +19,6 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_inicial);
 
         Log.i(CATEGORIA, getClassName() + ".onCreate();");
-
-        b1 = (Button) findViewById(R.id.buttonComecar);
-        b1.setOnClickListener(this);
-
     }
 
     public void onStart() {
@@ -63,7 +59,6 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(InicialActivity.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
