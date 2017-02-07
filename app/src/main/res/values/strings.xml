@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SeeLater</string>
+    <string name="comecar">VAMOS COMEÇAR!</string>
+    <string name="saudacaoMain">Olá!\nA partir de agora você pode organizar os livros, filmes e séries que deseja ver.</string>
 </resources>
