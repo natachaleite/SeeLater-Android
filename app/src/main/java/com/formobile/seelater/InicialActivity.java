@@ -1,5 +1,6 @@
 package com.formobile.seelater;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,10 +14,18 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
     Button b1;
 
     //CICLO DE VIDA
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class InicialActivity extends AppCompatActivity {
+
+>>>>>>> dev
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicial);
+<<<<<<< HEAD
 
         Log.i(CATEGORIA, getClassName() + ".onCreate();");
     }
@@ -60,5 +69,7 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         finish();
+=======
+>>>>>>> dev
     }
 }

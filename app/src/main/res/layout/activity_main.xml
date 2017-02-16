@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/AppThemeNoActionBar"
     android:background="@color/cor1"
+<<<<<<< HEAD
     tools:context="com.formobile.seelater.MainActivity">
 
 
@@ -39,10 +40,46 @@
         android:text="@string/mensagemInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+=======
+    android:onClick="startSecondActivity"
+    tools:context="com.formobile.seelater.MainActivity">
+
+
+    <TextView
+        android:text="@string/comecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/cor5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo_seelater"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="@string/saudacaoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+>>>>>>> dev
         android:id="@+id/textView2"
         android:textSize="34sp"
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 
 </RelativeLayout>

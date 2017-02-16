@@ -7,10 +7,15 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppThemeNoActionBar">
+=======
+        android:theme="@style/AppThemeNoActionBar">
+        <activity android:name=".MainActivity">
+>>>>>>> dev
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,10 +23,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".InicialActivity"></activity>
+<<<<<<< HEAD
         <activity
             android:name=".MenuLateral"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+>>>>>>> dev
     </application>
 
 </manifest>

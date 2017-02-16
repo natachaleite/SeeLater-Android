@@ -2,6 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<<<<<<< HEAD
         <!-- Customize your theme here.-->
         <item name="colorPrimary">@color/cor1</item>
     </style>
@@ -16,6 +17,20 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+=======
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cor1</item>
+        <item name="colorPrimaryDark">@color/preto</item>
+        <item name="colorAccent">@color/cor4</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+>>>>>>> dev
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

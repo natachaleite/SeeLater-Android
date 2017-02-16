@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">SeeLater</string>
+<<<<<<< HEAD
     <string name="comecar">Vamos começar?</string>
     <string name="voltar">Voltar</string>
     <string name="ola">Olá!</string>
@@ -10,4 +11,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+=======
+    <string name="comecar">VAMOS COMEÇAR!</string>
+    <string name="saudacaoMain">Olá!\nA partir de agora você pode organizar os livros, filmes e séries que deseja ver.</string>
+>>>>>>> dev
 </resources>

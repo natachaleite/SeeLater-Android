@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+>>>>>>> dev
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_inicial"
     android:layout_width="match_parent"
@@ -9,6 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     android:background="@color/branco"
     android:theme="@style/AppThemeNoActionBar"
     tools:context="com.formobile.seelater.InicialActivity">
@@ -73,4 +77,9 @@
         android:layout_alignStart="@+id/txt1tela3"
         android:layout_marginBottom="14dp" />
 
+=======
+    android:theme="@style/AppTheme"
+    tools:context="com.formobile.seelater.InicialActivity">
+
+>>>>>>> dev
 </RelativeLayout>
