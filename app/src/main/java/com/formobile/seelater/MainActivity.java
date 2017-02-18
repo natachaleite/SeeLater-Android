@@ -3,14 +3,15 @@ package com.formobile.seelater;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
-=======
-import android.view.View;
->>>>>>> dev
+class seriesObjeto {
+    String nome_serie;
+    String nome_produtora;
+    int classificacao1;
 
 public class MainActivity extends AppCompatActivity {
     private static final String CATEGORIA = "Script";
@@ -22,6 +23,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_main);
+
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, InicialActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+//        BancoController bc = new BancoController(this);
+//
+//        seriesObjeto[] seriesObj1 = bc.getSerieSimples();
+//
+//        seriesObj1[0].nome_serie;
+//        bc.deletaItem(CriaBanco.SERIE, 2);
+//        bc.deletaItem(CriaBanco.LIVRO, 2);
         Log.i(CATEGORIA, getClassName()+".onCreate();");
     }
 

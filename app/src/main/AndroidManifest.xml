@@ -10,7 +10,13 @@
         android:supportsRtl="true"
 <<<<<<< HEAD
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".MainActivity" android:theme="@style/AppThemeNoActionBar">
+=======
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeNoActionBar">
+>>>>>>> 752f1c761513982afd3824ff2864f36d52b87aa9
 =======
         android:theme="@style/AppThemeNoActionBar">
         <activity android:name=".MainActivity">
@@ -21,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <activity android:name=".InicialActivity" >
 
@@ -34,6 +41,15 @@
             android:value="@integer/google_play_services_version" />
 =======
         <activity android:name=".InicialActivity"></activity>
+=======
+        <activity android:name=".InicialActivity"></activity>
+<<<<<<< HEAD
+        <activity
+            android:name=".MenuLateral"
+            android:label="@string/title_activity_menu_lateral"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+>>>>>>> 752f1c761513982afd3824ff2864f36d52b87aa9
 >>>>>>> dev
     </application>
 

@@ -5,12 +5,17 @@
 <<<<<<< HEAD
         <!-- Customize your theme here.-->
         <item name="colorPrimary">@color/cor1</item>
+<<<<<<< HEAD
     </style>s
+=======
+    </style>
+>>>>>>> 752f1c761513982afd3824ff2864f36d52b87aa9
 
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+<<<<<<< HEAD
 =======
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/cor1</item>
@@ -25,6 +30,28 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+=======
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+=======
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cor1</item>
+        <item name="colorPrimaryDark">@color/preto</item>
+        <item name="colorAccent">@color/cor4</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+>>>>>>> dev
+>>>>>>> 752f1c761513982afd3824ff2864f36d52b87aa9
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
