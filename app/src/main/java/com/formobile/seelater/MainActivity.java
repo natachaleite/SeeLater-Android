@@ -3,10 +3,14 @@ package com.formobile.seelater;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+=======
+import android.view.View;
+>>>>>>> dev
 
 public class MainActivity extends AppCompatActivity {
     private static final String CATEGORIA = "Script";
@@ -60,5 +64,10 @@ public class MainActivity extends AppCompatActivity {
     public void startInicialActivity(View v) {
         Intent intent = new Intent(this, InicialActivity.class);
         startActivity(intent);
+    }
+
+    public void startSecondActivity (View view) {
+        Intent secondActivity = new Intent(this, InicialActivity.class);
+        startActivity(secondActivity);
     }
 }

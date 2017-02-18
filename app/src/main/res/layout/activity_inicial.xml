@@ -8,8 +8,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     android:background="@color/branco"
     android:theme="@style/AppThemeNoActionBar"
+=======
+    android:theme="@style/AppTheme"
+>>>>>>> dev
     tools:context="com.formobile.seelater.InicialActivity">
 
 </RelativeLayout>

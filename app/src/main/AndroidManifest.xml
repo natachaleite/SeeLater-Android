@@ -8,14 +8,20 @@
         android:roundIcon="@drawable/logo_seelater"
         android:label="SeeLater"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" android:theme="@style/AppThemeNoActionBar">
+=======
+        android:theme="@style/AppThemeNoActionBar">
+        <activity android:name=".MainActivity">
+>>>>>>> dev
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".InicialActivity" >
 
         <activity android:name=".AdicionarSerieActivity" />
@@ -26,6 +32,9 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+=======
+        <activity android:name=".InicialActivity"></activity>
+>>>>>>> dev
     </application>
 
 </manifest>
