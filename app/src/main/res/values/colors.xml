@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <color name="cor1">#efb135</color>
-=======
     <color name="cor1">#f1b136</color>
->>>>>>> dev
     <color name="cor2">#13b0a5</color>
     <color name="branco">#ffffff</color>
     <color name="cor4">#ef6363</color>

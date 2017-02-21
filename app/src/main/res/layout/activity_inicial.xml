@@ -8,69 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:theme="@style/AppThemeNoActionBar"
-    tools:context="com.formobile.seelater.InicialActivity">
-
-    <TextView
-        android:text="Tenho:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="72dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="54dp"
-        android:id="@+id/txt1tela3"
-        android:textSize="36sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="séries"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt4tela3"
-        android:textSize="30sp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:layout_below="@+id/txt3tela3"
-        android:layout_alignLeft="@+id/txt3tela3"
-        android:layout_alignStart="@+id/txt3tela3" />
-
-    <TextView
-        android:text="filmes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt3tela3"
-        android:textSize="30sp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/txt1tela3"
-        android:layout_toEndOf="@+id/txt1tela3" />
-
-    <TextView
-        android:text="livros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt2tela3"
-        android:textSize="30sp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:layout_above="@+id/txt3tela3"
-        android:layout_alignLeft="@+id/txt3tela3"
-        android:layout_alignStart="@+id/txt3tela3" />
-
-    <TextView
-        android:text="para serem vistos."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt5tela3"
-        android:textSize="36sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/txt1tela3"
-        android:layout_alignStart="@+id/txt1tela3"
-        android:layout_marginBottom="14dp" />
-
     android:theme="@style/AppTheme"
     tools:context="com.formobile.seelater.InicialActivity">
+
 </RelativeLayout>

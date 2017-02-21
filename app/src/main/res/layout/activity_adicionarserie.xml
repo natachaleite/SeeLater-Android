@@ -172,7 +172,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/rbPrioridade"
-            android:numStars="5" />
+        android:numStars="5"
+        android:stepSize="1.0"/>
 
     </LinearLayout>
 
