@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_main);
+        RelativeLayout relativeLayout =  (RelativeLayout) findViewById(R.id.activity_main);
 
         relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,14 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });
-//        BancoController bc = new BancoController(this);
-//
-//        seriesObjeto[] seriesObj1 = bc.getSerieSimples();
-//
-//        seriesObj1[0].nome_serie;
-//        bc.deletaItem(CriaBanco.SERIE, 2);
-//        bc.deletaItem(CriaBanco.LIVRO, 2);
+        }) ;
 
         Log.i(CATEGORIA, getClassName()+".onCreate();");
     }
@@ -82,11 +76,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startInicialActivity(View v) {
-
+        Intent intent = new Intent(this, InicialActivity.class);
+        startActivity(intent);
     }
 
     public void startSecondActivity (View view) {
         Intent secondActivity = new Intent(this, InicialActivity.class);
         startActivity(secondActivity);
     }
+
 }
