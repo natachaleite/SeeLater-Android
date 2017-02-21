@@ -3,7 +3,6 @@ package com.formobile.seelater;
 /* Created by Nathalia on 16/02/2017. */
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,8 +11,6 @@ import android.widget.RatingBar;
 
 
 public class AdicionarSerieActivity extends Activity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +46,7 @@ public class AdicionarSerieActivity extends Activity {
 
     @Override
     public void onStart() { super.onStart(); }
+
 
     @Override
     public void onStop() { super.onStop(); }

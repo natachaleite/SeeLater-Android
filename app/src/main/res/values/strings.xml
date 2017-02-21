@@ -2,4 +2,10 @@
     <string name="app_name">SeeLater</string>
     <string name="comecar">VAMOS COMEÇAR!</string>
     <string name="saudacaoMain">Olá!\nA partir de agora você pode organizar os livros, filmes e séries que deseja ver.</string>
+    <string name="voltar">Voltar</string>
+    <string name="ola">Olá!</string>
+    <string name="mensagemInicial">A partir de agora você pode organizar os livros, filmes e séries que deseja ver.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -174,7 +174,6 @@
         android:id="@+id/rbPrioridade"
         android:numStars="5"
         android:stepSize="1.0"/>
-
     </LinearLayout>
 
     <LinearLayout
