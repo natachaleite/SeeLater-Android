@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
-=======
->>>>>>> dev
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_inicial"
     android:layout_width="match_parent"
@@ -12,7 +9,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
     android:background="@color/branco"
     android:theme="@style/AppThemeNoActionBar"
     tools:context="com.formobile.seelater.InicialActivity">
@@ -30,56 +26,122 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/label_azul"
+        android:id="@+id/labelLivros"
+        android:layout_above="@+id/labelFilmes"
+        android:layout_alignLeft="@+id/txt1tela3"
+        android:layout_alignStart="@+id/txt1tela3"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/label_vermelha"
+        android:id="@+id/labelFilmes"
+        android:layout_above="@+id/labelSeries"
+        android:layout_alignLeft="@+id/labelLivros"
+        android:layout_alignStart="@+id/labelLivros" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/label_verde"
+        android:id="@+id/labelSeries"
+        android:layout_below="@+id/txt3tela3"
+        android:layout_alignLeft="@+id/labelFilmes"
+        android:layout_alignStart="@+id/labelFilmes"
+        android:layout_marginTop="13dp" />
+
     <TextView
         android:text="séries"
+        android:textColor="@color/cor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt4tela3"
         android:textSize="30sp"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
-        android:layout_below="@+id/txt3tela3"
+        android:layout_alignBottom="@+id/labelSeries"
         android:layout_alignLeft="@+id/txt3tela3"
         android:layout_alignStart="@+id/txt3tela3" />
 
     <TextView
+        android:text="livros"
+        android:textColor="@color/cor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLivros"
+        android:textSize="30sp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_alignBottom="@+id/labelLivros"
+        android:layout_toRightOf="@+id/txt1tela3"
+        android:layout_toEndOf="@+id/txt1tela3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
         android:text="filmes"
+        android:textColor="@color/cor4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt3tela3"
         android:textSize="30sp"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="97dp"
+        android:layout_below="@+id/txt1tela3"
+        android:layout_alignLeft="@+id/txtLivros"
+        android:layout_alignStart="@+id/txtLivros" />
+
+    <TextView
+        android:text="Y"
+        android:textColor="@color/cor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumFilmes"
+        android:layout_alignBaseline="@+id/txt3tela3"
+        android:layout_alignBottom="@+id/txt3tela3"
+        android:layout_alignLeft="@+id/txtNumLivros"
+        android:layout_alignStart="@+id/txtNumLivros"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Z"
+        android:textColor="@color/cor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumSeries"
+        android:layout_alignBaseline="@+id/txt4tela3"
+        android:layout_alignBottom="@+id/txt4tela3"
+        android:layout_alignLeft="@+id/txtNumFilmes"
+        android:layout_alignStart="@+id/txtNumFilmes"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="X"
+        android:textColor="@color/cor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumLivros"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/txtLivros"
+        android:layout_alignBottom="@+id/txtLivros"
         android:layout_toRightOf="@+id/txt1tela3"
         android:layout_toEndOf="@+id/txt1tela3" />
 
     <TextView
-        android:text="livros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt2tela3"
-        android:textSize="30sp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:layout_above="@+id/txt3tela3"
-        android:layout_alignLeft="@+id/txt3tela3"
-        android:layout_alignStart="@+id/txt3tela3" />
-
-    <TextView
-        android:text="para serem vistos."
+        android:text="para serem\nvistos."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt5tela3"
         android:textSize="36sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/txt1tela3"
-        android:layout_alignStart="@+id/txt1tela3"
-        android:layout_marginBottom="14dp" />
+        android:layout_below="@+id/labelSeries"
+        android:layout_alignLeft="@+id/labelSeries"
+        android:layout_alignStart="@+id/labelSeries"
+        android:layout_marginTop="16dp" />
 
-=======
-    android:theme="@style/AppTheme"
-    tools:context="com.formobile.seelater.InicialActivity">
-
->>>>>>> dev
 </RelativeLayout>

@@ -1,32 +1,32 @@
 package com.formobile.seelater;
 
-<<<<<<< HEAD
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class InicialActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String CATEGORIA = "Script";
     Button b1;
+    TextView livros;
 
     //CICLO DE VIDA
-=======
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-public class InicialActivity extends AppCompatActivity {
-
->>>>>>> dev
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicial);
-<<<<<<< HEAD
-
+        livros = (TextView) findViewById(R.id.txtLivros);
+        livros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(),Tela3Livros.class);
+                startActivity(i);
+            }
+        });
         Log.i(CATEGORIA, getClassName() + ".onCreate();");
     }
 
@@ -69,7 +69,5 @@ public class InicialActivity extends AppCompatActivity {
     @Override
     public void onClick(View v) {
         finish();
-=======
->>>>>>> dev
     }
 }

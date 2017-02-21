@@ -60,13 +60,14 @@ public class BancoController  {
         valores.put(CriaBanco.ANO, ano);
         valores.put(CriaBanco.CLASSIFICACAO, classificacao);
 
-        db.insert(CriaBanco.SERIE, null, valores);
+        db.insert(CriaBanco.FILME, null, valores);
         if (db.isOpen())
             db.close();
     }
 
     /*INSERIR LIVRO*/
     public void inserirLivro(String nomeLivro, String nomeAutor, String genero, String comentario, int paginas, int classificacao) {
+        Log.d("TAG","inseriu livro");
 
         db = banco.getWritableDatabase();
         ContentValues valores = new ContentValues();
@@ -78,7 +79,7 @@ public class BancoController  {
         valores.put(CriaBanco.PAGINAS, paginas);
         valores.put(CriaBanco.CLASSIFICACAO, classificacao);
 
-        db.insert(CriaBanco.SERIE, null, valores);
+        db.insert(CriaBanco.LIVRO, null, valores);
         if (db.isOpen())
             db.close();
     }
@@ -134,6 +135,51 @@ public class BancoController  {
             db.close();
 
         return seriesobj;
+    }
+
+    // Retorna as informações básicas das séries (TELA 10)
+    public Cursor getLivroSimples(int ID){
+        Log.d("DDDDEBUG","vrau");
+
+        Cursor cursor;
+        String[] campos = {CriaBanco.ID, CriaBanco.NOME_LIVRO, CriaBanco.NOME_AUTOR, CriaBanco.CLASSIFICACAO};
+        String where = CriaBanco.ID + " = " + ID;
+
+        db = banco.getReadableDatabase();
+
+        cursor = db.query(CriaBanco.LIVRO, campos, where, null, null, null, null, null);
+
+        cursor.moveToFirst();
+
+        if(db.isOpen())
+            db.close();
+
+        return cursor;
+    }
+
+    // Retorna as informações básicas das séries (TELA 10)
+    public String[] getLivroIds(){
+        Log.d("DDDDEBUG","vrau");
+
+        Cursor cursor;
+        String[] campos = {CriaBanco.ID};
+        db = banco.getReadableDatabase();
+
+        cursor = db.query(CriaBanco.LIVRO, campos, null, null, null, null, null, null);
+
+        String[] ids = new String[cursor.getCount()];
+
+        cursor.moveToFirst();
+        while(!cursor.isAfterLast()) {
+            ids[cursor.getPosition()] = String.valueOf(cursor.getInt(cursor.getColumnIndex(CriaBanco.ID)));
+            cursor.moveToNext();
+        }
+        cursor.close();
+
+        if(db.isOpen())
+            db.close();
+
+        return ids;
     }
 
     public void deletaItem(String TABELA, int ID){
