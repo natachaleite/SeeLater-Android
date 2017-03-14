@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="@color/cor3"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linha"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/label_branca"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="NomeSerie"
+            android:textColor="@color/branco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/nomeSerie"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Produtora"
+            android:textColor="@color/branco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/produtoraSerie"
+            android:layout_below="@+id/nomeSerie"
+            android:layout_alignLeft="@+id/nomeSerie"
+            android:layout_alignStart="@+id/nomeSerie" />
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingLivro"
+            android:layout_below="@+id/produtoraSerie"
+            android:layout_alignLeft="@+id/produtoraSerie"
+            android:layout_alignStart="@+id/produtoraSerie" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginStart="300dp"
+            android:id="@+id/checkBox"
+            android:layout_above="@+id/ratingLivro" />
+    </RelativeLayout>
+
+    <!--android:layout_toRightOf="@+id/nomeLivro"-->
+    <!--android:layout_toEndOf="@+id/nomeLivro" />-->
+</RelativeLayout>
