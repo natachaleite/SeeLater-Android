@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by ivan on 15/02/2016.
+ * Created by group on 15/02/2016.
  */
 public class CriaBanco extends SQLiteOpenHelper{
 
@@ -83,7 +83,7 @@ public class CriaBanco extends SQLiteOpenHelper{
                 + GENERO + " text,"
                 + COMENTARIO + " text,"
                 + PAGINAS + " integer,"
-                + CLASSIFICACAO + " integer,"
+                + CLASSIFICACAO + " float,"
                 + VISUALIZAR + " integer"
                 +")";
         db.execSQL(sql);

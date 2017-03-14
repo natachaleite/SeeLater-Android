@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Livro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLivro1"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="20dp"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Nome:      "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeLivro"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/etNomeLivro"
+            android:layout_weight="0.67" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Autor:   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeAutorLivro"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/etAutorLivro"
+            android:layout_weight="0.38" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Gênero:     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/generoLivro"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/etGeneroLivro"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Comentário:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comentarioLivro"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="332dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/etComentarioLivro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Páginas:     "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qtdePaginas"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/etQtdePaginas"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="Prioridade:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbPrioridade"
+            android:numStars="5"
+            android:stepSize="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:text="Pronto!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cor1"
+            android:id="@+id/buttonOK" />
+
+    </LinearLayout>
+
+</LinearLayout>

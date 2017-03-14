@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_main);
+        RelativeLayout relativeLayout =  (RelativeLayout) findViewById(R.id.activity_main);
 
         relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,14 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });
-//        BancoController bc = new BancoController(this);
-//
-//        seriesObjeto[] seriesObj1 = bc.getSerieSimples();
-//
-//        seriesObj1[0].nome_serie;
-//        bc.deletaItem(CriaBanco.SERIE, 2);
-//        bc.deletaItem(CriaBanco.LIVRO, 2);
+        }) ;
 
         Log.i(CATEGORIA, getClassName()+".onCreate();");
     }
@@ -81,12 +74,6 @@ public class MainActivity extends AppCompatActivity {
         return(aux.substring(aux.lastIndexOf(".") +1));
     }
 
-    public void startInicialActivity(View v) {
 
-    }
 
-    public void startSecondActivity (View view) {
-        Intent secondActivity = new Intent(this, InicialActivity.class);
-        startActivity(secondActivity);
-    }
 }

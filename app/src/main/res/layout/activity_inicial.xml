@@ -5,13 +5,24 @@
     android:id="@+id/activity_inicial"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/branco"
     android:theme="@style/AppThemeNoActionBar"
     tools:context="com.formobile.seelater.InicialActivity">
+
+
+
+    <TextView
+        android:text="Tenho:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="54dp"
+        android:id="@+id/txt1tela3"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -37,26 +48,26 @@
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/label_verde"
         android:id="@+id/labelSeries"
-        android:layout_below="@+id/txt3tela3"
+        android:layout_below="@+id/txtFilmes"
         android:layout_alignLeft="@+id/labelFilmes"
         android:layout_alignStart="@+id/labelFilmes"
         android:layout_marginTop="13dp" />
 
     <TextView
-        android:text="séries"
+        android:text="série(s)"
         android:textColor="@color/cor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txt4tela3"
+        android:id="@+id/txtSeries"
         android:textSize="30sp"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
         android:layout_alignBottom="@+id/labelSeries"
-        android:layout_alignLeft="@+id/txt3tela3"
-        android:layout_alignStart="@+id/txt3tela3" />
+        android:layout_alignLeft="@+id/txtFilmes"
+        android:layout_alignStart="@+id/txtFilmes" />
 
     <TextView
-        android:text="livros"
+        android:text="livro(s)"
         android:textColor="@color/cor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,11 +82,11 @@
         android:layout_marginStart="35dp" />
 
     <TextView
-        android:text="filmes"
+        android:text="filme(s)"
         android:textColor="@color/cor4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txt3tela3"
+        android:id="@+id/txtFilmes"
         android:textSize="30sp"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
@@ -85,31 +96,19 @@
         android:layout_alignStart="@+id/txtLivros" />
 
     <TextView
-        android:text="Y"
+        android:text="0"
         android:textColor="@color/cor4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtNumFilmes"
-        android:layout_alignBaseline="@+id/txt3tela3"
-        android:layout_alignBottom="@+id/txt3tela3"
+        android:layout_alignBaseline="@+id/txtFilmes"
+        android:layout_alignBottom="@+id/txtFilmes"
         android:layout_alignLeft="@+id/txtNumLivros"
         android:layout_alignStart="@+id/txtNumLivros"
         android:textSize="30sp" />
 
     <TextView
-        android:text="Z"
-        android:textColor="@color/cor3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtNumSeries"
-        android:layout_alignBaseline="@+id/txt4tela3"
-        android:layout_alignBottom="@+id/txt4tela3"
-        android:layout_alignLeft="@+id/txtNumFilmes"
-        android:layout_alignStart="@+id/txtNumFilmes"
-        android:textSize="30sp" />
-
-    <TextView
-        android:text="X"
+        android:text="0"
         android:textColor="@color/cor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -121,7 +120,7 @@
         android:layout_toEndOf="@+id/txt1tela3" />
 
     <TextView
-        android:text="para serem vistos."
+        android:text="para serem\nvistos."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt5tela3"
@@ -132,16 +131,54 @@
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:text="Tenho:"
+        android:text="0"
+        android:textColor="@color/cor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="58dp"
-        android:id="@+id/txt1tela3"
-        android:textSize="36sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/txtNumSeries"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/txtSeries"
+        android:layout_alignBottom="@+id/txtSeries"
+        android:layout_alignLeft="@+id/txtNumFilmes"
+        android:layout_alignStart="@+id/txtNumFilmes" />
 
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/txt5tela3"
+        android:layout_toEndOf="@+id/txt5tela3"
+        android:id="@+id/btnCadastra" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/menuLateral"
+        android:background="@color/cor5">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icone_livro"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/labelCadastraLivro"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icone_filme"
+            android:id="@+id/labelCadastraFilme"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/labelCadastraLivro"
+            android:layout_marginBottom="12dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icone_serie"
+            android:id="@+id/labelCadastraSerie"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/labelCadastraFilme"
+            android:layout_marginBottom="12dp" />
+    </RelativeLayout>
 </RelativeLayout>
