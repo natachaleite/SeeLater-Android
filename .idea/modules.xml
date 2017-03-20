@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SeeLater.iml" filepath="$PROJECT_DIR$/SeeLater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeeLater-Android-dev.iml" filepath="$PROJECT_DIR$/SeeLater-Android-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
