@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
+import static com.formobile.seelater.R.id.nomeSerie;
 import static java.lang.Boolean.TRUE;
 
 /**
@@ -34,7 +35,7 @@ public class BancoController  {
     }
 
     /*INSERIR SERIE*/
-    public void inserirSerie(String nomeSerie,  String numTemporada, String nomeProdutora, String genero, String comentario, float classificacao) {
+    public void inserirSerie(String nomeSerie, String nomeProdutora, String genero, String comentario,  int numTemporada, float classificacao) {
 
         db = banco.getWritableDatabase();
         ContentValues valores = new ContentValues();
@@ -56,7 +57,6 @@ public class BancoController  {
 
         db = banco.getWritableDatabase();
         ContentValues valores = new ContentValues();
-//        long resultado;
 
         valores.put(CriaBanco.NOME_FILME, nomeFilme);
         valores.put(CriaBanco.GENERO, genero);
@@ -64,11 +64,7 @@ public class BancoController  {
         valores.put(CriaBanco.ANO, ano);
         valores.put(CriaBanco.CLASSIFICACAO, classificacao);
 
-//        resultado = db.insert(CriaBanco.FILME, null, valores);
         db.insert(CriaBanco.FILME, null, valores);
-
-//        if(resultado == 1)
-//            countFilmes++;
 
         if (db.isOpen())
             db.close();
@@ -76,7 +72,6 @@ public class BancoController  {
 
     /*INSERIR LIVRO*/
     public void inserirLivro(String nomeLivro, String nomeAutor, String genero, String comentario, int paginas, float classificacao) {
-        Log.d("TAG","inseriu livro");
 
         db = banco.getWritableDatabase();
         ContentValues valores = new ContentValues();
@@ -96,7 +91,7 @@ public class BancoController  {
     }
 
     /*EDITAR SERIE*/
-    public String editarSerie(String nomeSerie, String nomeProdutora, String genero, String comentario, int numTemporada, int classificacao, int ID) {
+    public String editarSerie(String nomeSerie, String nomeProdutora, String genero, String comentario, int numTemporada, float classificacao, int ID) {
         int resultado;
         String where = CriaBanco.ID + " = " + ID;
 
@@ -111,6 +106,54 @@ public class BancoController  {
         valores.put(CriaBanco.CLASSIFICACAO, classificacao);
 
         resultado = db.update(CriaBanco.SERIE, valores, where, null);
+        if (db.isOpen())
+            db.close();
+        if (resultado == -1)
+            return "Erro ao alterar registro";
+        else
+            return "Registro alterado com sucesso!";
+    }
+
+    /*EDITAR LIVRO*/
+    public String editarLivro(String nomeLivro, String nomeAutor, String genero, String comentario, int numPaginas, float classificacao, int ID) {
+        int resultado;
+        String where = CriaBanco.ID + " = " + ID;
+
+        db = banco.getWritableDatabase();
+        ContentValues valores = new ContentValues();
+
+        valores.put(CriaBanco.NOME_LIVRO, nomeLivro);
+        valores.put(CriaBanco.NOME_AUTOR, nomeAutor);
+        valores.put(CriaBanco.GENERO, genero);
+        valores.put(CriaBanco.COMENTARIO, comentario);
+        valores.put(CriaBanco.CLASSIFICACAO, classificacao);
+        valores.put(CriaBanco.PAGINAS, numPaginas);
+
+        resultado = db.update(CriaBanco.LIVRO, valores, where, null);
+        if (db.isOpen())
+            db.close();
+        if (resultado == -1)
+            return "Erro ao alterar registro";
+        else
+            return "Registro alterado com sucesso!";
+    }
+
+    /*EDITAR FILME*/
+    public String editarFilme(String nomeLivro, String genero, String comentario, int ano, float classificacao, int ID) {
+        int resultado;
+        String where = CriaBanco.ID + " = " + ID;
+
+        db = banco.getWritableDatabase();
+        ContentValues valores = new ContentValues();
+
+        valores.put(CriaBanco.NOME_FILME, nomeLivro);
+        valores.put(CriaBanco.GENERO, genero);
+        valores.put(CriaBanco.COMENTARIO, comentario);
+        valores.put(CriaBanco.ANO, ano);
+        valores.put(CriaBanco.CLASSIFICACAO, classificacao);
+
+
+        resultado = db.update(CriaBanco.FILME, valores, where, null);
         if (db.isOpen())
             db.close();
         if (resultado == -1)

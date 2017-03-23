@@ -142,15 +142,6 @@
         android:layout_alignLeft="@+id/txtNumFilmes"
         android:layout_alignStart="@+id/txtNumFilmes" />
 
-    <Button
-        android:text="+"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/txt5tela3"
-        android:layout_toEndOf="@+id/txt5tela3"
-        android:id="@+id/btnCadastra" />
-
     <RelativeLayout
         android:layout_width="100dp"
         android:layout_height="match_parent"
@@ -181,4 +172,13 @@
             android:layout_below="@+id/labelCadastraFilme"
             android:layout_marginBottom="12dp" />
     </RelativeLayout>
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCadastra"
+        android:layout_below="@+id/txt5tela3"
+        android:layout_alignRight="@+id/txtSeries"
+        android:layout_alignEnd="@+id/txtSeries" />
 </RelativeLayout>

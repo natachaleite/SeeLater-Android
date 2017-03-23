@@ -3,6 +3,7 @@ package com.formobile.seelater;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,7 @@ public class CustomAdapterSeries extends ArrayAdapter<String> {
     View customView;
 
     CustomAdapterSeries(Context context, String[] datas) {
-        super(context, R.layout.default_livros, datas);
+        super(context, R.layout.default_series, datas);
         contexto = context;
         IDs = datas;
     }
@@ -55,8 +56,12 @@ public class CustomAdapterSeries extends ArrayAdapter<String> {
                 builder.setMessage(textodialogo)
                         .setPositiveButton("Editar", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                // FIRE ZE MISSILES!
-                                Toast.makeText(contexto,"Editei",Toast.LENGTH_LONG).show();
+                                // FIRE ZE MISSILES!7
+                                Intent intent = new Intent(contexto, AdicionaSeriesActivity.class);
+                                intent.putExtra("tela", 1);
+                                intent.putExtra("id", IDs[position]);
+                                contexto.startActivity(intent);
+
                             }
                         })
                         .setNegativeButton("Excluir", new DialogInterface.OnClickListener() {
@@ -80,7 +85,7 @@ public class CustomAdapterSeries extends ArrayAdapter<String> {
         nomeSerie.setText(c.getString(c.getColumnIndex(CriaBanco.NOME_SERIE)));
         produtora.setText(c.getString(c.getColumnIndex(CriaBanco.NOME_PRODUTORA)));
 
-        RatingBar a = (RatingBar)customView.findViewById(R.id.ratingLivro);
+        RatingBar a = (RatingBar)customView.findViewById(R.id.ratingSerie);
         a.setNumStars(c.getInt(c.getColumnIndex(CriaBanco.CLASSIFICACAO)));
 
         return customView;

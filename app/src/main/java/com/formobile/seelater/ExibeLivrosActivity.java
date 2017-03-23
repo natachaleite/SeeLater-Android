@@ -15,7 +15,6 @@ public class ExibeLivrosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_exibe_livros);
         Lista_livros = (ListView) findViewById(R.id.ListaLivros);
 

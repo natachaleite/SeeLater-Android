@@ -37,7 +37,7 @@
             android:inputType="textPersonName"
             android:background="@drawable/edittext_bg"
             android:ems="10"
-            android:id="@+id/etNome"
+            android:id="@+id/etNomeSerie"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -140,7 +140,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:layout_width="332dp"
+            android:layout_width="330dp"
             android:layout_height="35dp"
             android:layout_marginTop="10dp"
             android:inputType="textPersonName"

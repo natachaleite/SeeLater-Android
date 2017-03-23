@@ -1,0 +1,136 @@
+[33mcommit b45cfef1c49c2c5bd23b775000f8733602eea8e2[m
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Thu Mar 23 16:33:49 2017 -0300
+
+    Função de Editar: Hoje sim
+
+[33mcommit 814474f34a1f8ef8b6186cac9a5155e79f1c882e[m
+Merge: d942e90 1bf0c72
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Tue Feb 21 01:59:27 2017 -0300
+
+    Ajuste do merger das branchs Luiz e Nathalia
+
+[33mcommit d942e908a82a06bcb1648dce18f6d6f5ddb8ff18[m
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Mon Feb 20 23:49:11 2017 -0300
+
+    Ajustes de design e funcionalidade - puxando dados do banco - na tela 10
+
+[33mcommit 1bf0c723ac83aeb9629ab2ffa607b02c311f9883[m
+Merge: 321f530 b89c084
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Mon Feb 20 21:41:04 2017 -0300
+
+    Corrigindo conflitos
+
+[33mcommit 321f53072c5d2eaf201f86b8f1c017e0fc49e22c[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Mon Feb 20 21:09:46 2017 -0300
+
+    Classe AdicionarSerie
+
+[33mcommit d96abd3eac0ec999554e81d418528f18543a0e6f[m
+Merge: 2def18a 752f1c7
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Sat Feb 18 19:21:20 2017 -0200
+
+    Pull Branch Luiz
+
+[33mcommit 2def18a9a5c11ccfde080741982fc89973124cda[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Sat Feb 18 00:06:24 2017 -0200
+
+    Classes Filme Serie e Livro. Tela e xml Adicionar Serie.
+
+[33mcommit b89c08440a7e8275fa176fa548672578a12e26a9[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Fri Feb 17 23:19:10 2017 -0200
+
+    merge
+
+[33mcommit 4da260a8ce4cf4f0da9fdbf8b7107fb26a8454b5[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Fri Feb 17 22:44:53 2017 -0200
+
+    Resolvendo conflitos merge
+
+[33mcommit d881a22e3719d1eaaf1153f5b7616d0273eb7651[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Fri Feb 17 22:14:00 2017 -0200
+
+    Desenvolvimento da tela Adicionar Serie
+
+[33mcommit 752f1c761513982afd3824ff2864f36d52b87aa9[m
+Merge: b0a9a94 d997227
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Thu Feb 16 11:40:41 2017 -0200
+
+    tentando comitar antes do merge
+
+[33mcommit b0a9a94507146f9d50b539930efb0fe650a8769d[m
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Thu Feb 16 11:36:18 2017 -0200
+
+    Commit antes de dar merge para dev
+
+[33mcommit 6c6e6ce9a03c94b20c3fec73de52fe76c2cccb6b[m
+Author: lhgamaral <lhg.amaral@gmail.com>
+Date:   Thu Feb 16 11:32:52 2017 -0200
+
+    Commit antes de dar merge para dev
+
+[33mcommit 61170655645b1bbd4c1b10e69619bf1ceea5e2e5[m
+Merge: d49dff5 995e72d
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Wed Feb 15 22:24:44 2017 -0200
+
+    Merge branch 'Caio' of https://github.com/natachaleite/SeeLater-Phonegap into Nathalia
+
+[33mcommit d49dff595b3fbfe3ed82ecc17af3f107babf938e[m
+Author: nathaliarezende <nathalia.silva.11@hotmail.com>
+Date:   Wed Feb 15 22:08:17 2017 -0200
+
+    Criacao das classes Filme Serie e Livro
+
+[33mcommit 995e72df7fbf69b5b8540bd3d96de1c67fa47550[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Tue Feb 7 13:35:06 2017 -0200
+
+    Atualizando
+
+[33mcommit d9972274b99b76fd76c4eea8f665cafad410287c[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Tue Feb 7 11:20:11 2017 -0200
+
+    Refazendo a primeira tela
+
+[33mcommit df1e2816a2983bbddeec06b1e8e92fe742fd358a[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Tue Feb 7 11:19:18 2017 -0200
+
+    Refazendo a primeira tela
+
+[33mcommit 3ed16f20c3d704ad164af04bce69d816a7527850[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Mon Feb 6 15:03:27 2017 -0200
+
+    Atualizando antes do push
+
+[33mcommit 85050cf6b9dacf13658bf9d4e5a827eed452e53b[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Tue Jan 31 17:22:16 2017 -0200
+
+    Criação da tela inicial/Funcionalidade do botao começar
+
+[33mcommit 3f4569743d25f6e2005f9de16a3d4190f976a6f3[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Wed Jan 25 18:37:23 2017 -0200
+
+    commit inicial - adicionando arquivos iniciais
+
+[33mcommit bcc959b27e3a5d753e6ae188934c624b594976b6[m
+Author: Caio Ferreira <caiobarbosaferreira@gmail.com>
+Date:   Wed Jan 25 18:24:46 2017 -0200
+
+    commit inicial para adicionar todos arquivos ao git

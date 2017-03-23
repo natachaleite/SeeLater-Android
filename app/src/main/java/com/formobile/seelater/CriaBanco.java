@@ -24,9 +24,9 @@ public class CriaBanco extends SQLiteOpenHelper{
 
     /* TABELA FILME*/
     public static final String FILME = "filme"; /*nome da tabela*/
-//    public static final String ID = "_id";
-    public static final String NOME_FILME = "nm_Serie";
-//    public static final String GENERO = "txt_Genero";
+    //    public static final String ID = "_id";
+    public static final String NOME_FILME = "nm_Filme";
+    //    public static final String GENERO = "txt_Genero";
 //    public static final String COMENTARIO = "txt_Comentario";
     public static final String ANO = "dt_Ano";
 //    public static final String CLASSIFICACAO = "num_Classificacao";
@@ -34,10 +34,10 @@ public class CriaBanco extends SQLiteOpenHelper{
 
     /* TABELA LIVRO*/
     public static final String LIVRO = "livro"; /*nome da tabela*/
-//    public static final String ID = "_id";
+    //    public static final String ID = "_id";
     public static final String NOME_LIVRO = "nm_Livro";
     public static final String NOME_AUTOR = "nm_Autor";
-//    public static final String GENERO = "txt_Genero";
+    //    public static final String GENERO = "txt_Genero";
 //    public static final String COMENTARIO = "txt_Comentario";
     public static final String PAGINAS = "num_Paginas";
 //    public static final String CLASSIFICACAO = "num_Classificacao";
@@ -83,7 +83,7 @@ public class CriaBanco extends SQLiteOpenHelper{
                 + GENERO + " text,"
                 + COMENTARIO + " text,"
                 + PAGINAS + " integer,"
-                + CLASSIFICACAO + " float,"
+                + CLASSIFICACAO + " integer,"
                 + VISUALIZAR + " integer"
                 +")";
         db.execSQL(sql);

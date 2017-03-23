@@ -52,6 +52,7 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(), AdicionaLivrosActivity.class);
+                i.putExtra("tela", 0);
                 startActivity(i);
             }
         });
@@ -60,6 +61,8 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(), ExibeLivrosActivity.class);
+                i.putExtra("tela", 0);
+
                 startActivity(i);
             }
         });
@@ -68,6 +71,7 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(), AdicionaSeriesActivity.class);
+                i.putExtra("tela", 0);
                 startActivity(i);
             }
         });
@@ -84,6 +88,7 @@ public class InicialActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(), AdicionaFilmesActivity.class);
+                i.putExtra("tela", 0);
                 startActivity(i);
             }
         });

@@ -17,7 +17,6 @@ public class ExibeFilmesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exibe_filmes);
-        Toast.makeText(ExibeFilmesActivity.this,"Cheguei",Toast.LENGTH_LONG).show();
         Lista_filmes = (ListView) findViewById(R.id.ListaFilmes);
 
         bc = new BancoController(this);

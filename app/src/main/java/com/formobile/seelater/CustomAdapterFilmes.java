@@ -3,6 +3,7 @@ package com.formobile.seelater;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,10 @@ public class CustomAdapterFilmes extends ArrayAdapter<String> {
                         .setPositiveButton("Editar", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // FIRE ZE MISSILES!
-                                Toast.makeText(contexto,"Editei",Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(contexto, AdicionaFilmesActivity.class);
+                                intent.putExtra("tela", 1);
+                                intent.putExtra("id", IDs[position]);
+                                contexto.startActivity(intent);
                             }
                         })
                         .setNegativeButton("Excluir", new DialogInterface.OnClickListener() {

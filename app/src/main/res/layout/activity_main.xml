@@ -14,16 +14,6 @@
     tools:context="com.formobile.seelater.MainActivity">
 
 
-    <TextView
-        android:text="@string/comecar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:textColor="@color/cor5"/>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,14 +26,25 @@
         android:layout_alignParentTop="true" />
 
     <TextView
+        android:text="@string/comecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="@color/cor5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+    <TextView
         android:text="@string/mensagemInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textSize="34sp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="37dp"
+        android:padding="16dp"
         android:layout_above="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:padding="16dp" />
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
